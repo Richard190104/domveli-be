@@ -265,12 +265,5 @@
       "activeTo": "2026.12.26"
     }
   ],
-  "navbannerConfig": [
-    {
-      "title": "Vianočná výzdoba bez starostí!",
-      "description": "Vyberte si dekorácie a osvetlenie pre svoj domov.",
-      "buttonText": "Pozrieť ponuku",
-      "link": "/vianocne-gule-a-ozdoby/"
-    }
-  ]
+  "navbannerConfig": []
 }
