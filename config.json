@@ -243,19 +243,8 @@
   },
   "notificationsConfig": [
     {
-      "title": "Rozžiarte svoj domov na Vianoce ✨",
-      "description": "Objavte svetelné dekorácie, ktoré vytvoria útulnú vianočnú atmosféru.",
-      "images": [
-        "images/svetelnedekoracie.webp"
-      ],
-      "buttonText": "Pozrieť dekorácie",
-      "link": "/svetelne-dekoracie/",
-      "activeFrom": "2026.10.12",
-      "activeTo": "2026.12.26"
-    },
-    {
       "title": "Vianočné svetelné závesy 🎄",
-      "description": "Dodajte oknám a balkónom sviatočný nádych pomocou LED svetelných závesov.",
+      "description": "Premeňte svoj domov na čarovné vianočné miesto pomocou LED cencúľov, ktoré rozžiaria okná, balkóny aj strechu príjemným sviatočným svetlom. ✨",
       "images": [
         "images/svetelne-zavesy.webp"
       ],
