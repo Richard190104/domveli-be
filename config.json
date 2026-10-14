@@ -5,49 +5,49 @@
         "id": "retaze",
         "name": "Vonkajšie LED svetielka",
         "url": "/vonkajsie-led-svetielka/",
-        "image": "images/playground-diagram-1791993228630-pgwkjq.webp"
+        "image": "images/vonkajsieledsvetielka.webp"
       },
       {
         "id": "zavesy",
         "name": "Svetelné závesy",
         "url": "/svetelne-zavesy/",
-        "image": "/user/documents/upload/svetelne zavesy.png"
+        "image": "images/svetelne-zavesy.webp"
       },
       {
         "id": "dekoracie",
         "name": "Svetelné dekorácie",
         "url": "/svetelne-dekoracie/",
-        "image": "/user/documents/upload/svetelnedekoracie.png"
+        "image": "images/svetelnedekoracie.webp"
       },
       {
         "id": "gule-ozdoby",
         "name": "Vianočné gule a ozdoby",
         "url": "/vianocne-gule-a-ozdoby/",
-        "image": "/user/documents/upload/vianoce-gule-a-ozdoby.png"
+        "image": "images/vianoce-gule-a-ozdoby.webp"
       },
       {
         "id": "svietka-stromcek",
         "name": "Svetielka na stromček",
         "url": "/svetielka-na-stromcek/",
-        "image": "/user/documents/upload/svetielka-na-stromcek.png"
+        "image": "images/svetielka-na-stromcek.webp"
       },
       {
         "id": "zavesy-dekorativne-osvetlenie",
         "name": "Svetelné závesy a dekoratívne osvetlenie",
         "url": "/svetelne-zavesy-2/",
-        "image": "/user/documents/upload/svetelne-zavesy-a-dekorativne-osvetlenie.png"
+        "image": "images/svetelne-zavesy-a-dekorativne-osvetlenie.webp"
       },
       {
         "id": "dekoracie-domacnosti",
         "name": "Dekorácie do domácnosti",
         "url": "/dekoracie-do-domacnosti/",
-        "image": "/user/documents/upload/dekoracie-do-domacnosti.png"
+        "image": "images/dekoracie-do-domacnosti.webp"
       },
       {
         "id": "retaze-girlandy",
         "name": "Vianočné reťaze a girlandy",
         "url": "/vianocne-retaze-a-girlandy/",
-        "image": "/user/documents/upload/vianocne-retaze-a-girlandy.png"
+        "image": "images/vianocne-retaze-a-girlandy.webp"
       }
     ],
     "categorySection": {
@@ -66,19 +66,19 @@
         {
           "title": "Ako vybrať správne vianočné osvetlenie?",
           "description": "Teplá alebo studená biela? Poradíme vám, ako vybrať svetlá pre váš domov.",
-          "image": "/user/documents/upload/blog-osvetlenie.png",
+          "image": "images/blog-osvetlenie.webp",
           "url": "/blog/ako-vybrat-spravne-vianocne-osvetlenie--kompletny-sprievodca-pre-vas-domov/"
         },
         {
           "title": "5 nápadov na čarovnú výzdobu okien",
           "description": "Objavte, ako pomocou svetelných závesov vytvoriť útulnú sviatočnú atmosféru.",
-          "image": "/user/documents/upload/blog-okna.png",
+          "image": "images/blog-okna.webp",
           "url": "/blog/5-napadov-na-carovnu-vianocnu-vyzdobu-okien/"
         },
         {
           "title": "Elegantné Vianoce v zlatých tónoch",
           "description": "Inšpirujte sa kombináciou jemných svetiel, zlatých dekorácií a prírodných materiálov.",
-          "image": "/user/documents/upload/blog-dekoracie.png",
+          "image": "images/blog-dekoracie.webp",
           "url": "/blog/elegantne-vianoce-v-zlatych-tonoch--vytvorte-si-domov-plny-sviatocneho-cara/"
         }
       ]
@@ -87,7 +87,7 @@
       "kicker": "SPOZNAJTE DOMVELI",
       "title": "Vianočná atmosféra začína u nás",
       "description": "Veríme, že najkrajšie Vianoce tvoria chvíle strávené s blízkymi. Preto v DOMVELI prinášame svetelné dekorácie a doplnky, ktoré premieňajú každý domov na miesto plné tepla, pohody a nezabudnuteľných okamihov.",
-      "image": "/user/documents/upload/o-nas.png",
+      "image": "images/o-nas.webp",
       "button": "VIAC O NÁS →",
       "url": "/domveli/o-nas/"
     },
@@ -95,8 +95,8 @@
       {
         "id": "dekoracie",
         "images": [
-          "/user/documents/upload/banner1.png",
-          "/user/documents/upload/banner1-2.png"
+          "images/banner1.webp",
+          "images/banner1-2.webp"
         ],
         "uptitle": "VYTVORTE SI ČAROVNÚ ATMOSFÉRU",
         "title": [
@@ -116,7 +116,7 @@
       {
         "id": "zavesy",
         "images": [
-          "/user/documents/upload/banner2.png"
+          "images/banner2.webp"
         ],
         "uptitle": "SVETELNÉ ZÁVESY",
         "title": [
@@ -133,7 +133,7 @@
       {
         "id": "retaze",
         "images": [
-          "/user/documents/upload/banner3.png"
+          "images/banner3.webp"
         ],
         "uptitle": "SVETELNÉ REŤAZE",
         "title": [
@@ -160,7 +160,7 @@
       "products": [
         {
           "name": "Vianočný stôl – výhodný set pre 4 osoby s nálevkami na stolíčky a ...",
-          "image": "/user/documents/upload/set-vianocny-stol.png",
+          "image": "images/set-vianocny-stol.webp",
           "url": "/vianocny-stol-vyhodny-set/",
           "price": "20,90 €",
           "oldPrice": "",
@@ -168,7 +168,7 @@
         },
         {
           "name": "Ľadový balkón – vianočný LED set 600 LED, studená biela, 3 produkty",
-          "image": "/user/documents/upload/set-ladovy-balkon.png",
+          "image": "images/set-ladovy-balkon.webp",
           "url": "/ladovy-balkon-vianocny-led-set-600-led/",
           "price": "51,90 €",
           "oldPrice": "",
@@ -176,7 +176,7 @@
         },
         {
           "name": "Zlaté Vianoce – kompletný set LED osvetlenia domu",
-          "image": "/user/documents/upload/set-zlate-vianoce.png",
+          "image": "images/set-zlate-vianoce.webp",
           "url": "/vianocny-set-zlate-vianoce-osvetlenie-domu/",
           "price": "129,90 €",
           "oldPrice": "",
@@ -184,7 +184,7 @@
         },
         {
           "name": "Zimná rozprávka – vianočný set 30 bielych guli, 12 včelích guli a 6 metrov ...",
-          "image": "/user/documents/upload/set-zimna-rozpravka.png",
+          "image": "images/set-zimna-rozpravka.webp",
           "url": "/zimna-rozpravka-vianocny-set/",
           "price": "42,90 €",
           "oldPrice": "",
@@ -192,7 +192,7 @@
         },
         {
           "name": "Zlatý stromček – vianočný set 500 LED + 46 zlatých ozdôb",
-          "image": "/user/documents/upload/set-zlaty-stromcek.png",
+          "image": "images/set-zlaty-stromcek.webp",
           "url": "/zlaty-stromcek-500-led-46-ozdob-/",
           "price": "53,90 €",
           "oldPrice": "",
@@ -200,7 +200,7 @@
         },
         {
           "name": "Vianočná pohoda – set 4 obliečok na vankúše, 4 obliečky na vankúše a 1 x ...",
-          "image": "/user/documents/upload/set-vianocna-pohoda.png",
+          "image": "images/set-vianocna-pohoda.webp",
           "url": "/vianocna-pohoda-vyhodny-set/",
           "price": "29,90 €",
           "oldPrice": "",
@@ -208,7 +208,7 @@
         },
         {
           "name": "Kúzelný balkón – vianočný LED set 600 LED, teplá biela, 3 produkty",
-          "image": "/user/documents/upload/set-kuzelny-balkon.png",
+          "image": "images/set-kuzelny-balkon.webp",
           "url": "/kuzelny-balkon-vianocny-led-set-600-led/",
           "price": "51,90 €",
           "oldPrice": "",
@@ -216,7 +216,7 @@
         },
         {
           "name": "Červená elegancia – vianočný set 40 ozdôb, 6 červených magnólií a 6 m ...",
-          "image": "/user/documents/upload/set-cervena-elegancia.png",
+          "image": "images/set-cervena-elegancia.webp",
           "url": "/cervena-elegancia-vianocny-set/",
           "price": "33,90 €",
           "oldPrice": "",
@@ -224,7 +224,7 @@
         },
         {
           "name": "Ľadové Vianoce – kompletné LED osvetlenie domu",
-          "image": "/user/documents/upload/set-ladove-vianoce.png",
+          "image": "images/set-ladove-vianoce.webp",
           "url": "/vianocny-set-ladove-vianoce-osvetlenie-domu/",
           "price": "99,90 €",
           "oldPrice": "",
@@ -232,7 +232,7 @@
         },
         {
           "name": "Farebné Vianoce – kompletné LED osvetlenie domu, 1480 LED",
-          "image": "/user/documents/upload/set-farebne-vianoce.png",
+          "image": "images/set-farebne-vianoce.webp",
           "url": "/farebne-vianoce---kompletny-set-led-osvetlenia-domu--1480-led/",
           "price": "105,90 €",
           "oldPrice": "",
@@ -246,7 +246,7 @@
       "title": "Rozžiarte svoj domov na Vianoce ✨",
       "description": "Objavte svetelné dekorácie, ktoré vytvoria útulnú vianočnú atmosféru.",
       "images": [
-        "/user/documents/upload/svetelnedekoracie.png"
+        "images/svetelnedekoracie.webp"
       ],
       "buttonText": "Pozrieť dekorácie",
       "link": "/svetelne-dekoracie/",
@@ -257,7 +257,7 @@
       "title": "Vianočné svetelné závesy 🎄",
       "description": "Dodajte oknám a balkónom sviatočný nádych pomocou LED svetelných závesov.",
       "images": [
-        "/user/documents/upload/svetelne zavesy.png"
+        "images/svetelne-zavesy.webp"
       ],
       "buttonText": "Objaviť svetelné závesy",
       "link": "/svetelne-zavesy/",
