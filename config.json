@@ -218,7 +218,7 @@
           "name": "Červená elegancia – vianočný set 40 ozdôb, 6 červených magnólií a 6 m ...",
           "image": "images/set-cervena-elegancia.webp",
           "url": "/cervena-elegancia-vianocny-set/",
-          "price": "33,90 €",
+          "price": "45,90 €",
           "oldPrice": "",
           "discount": ""
         },
@@ -235,6 +235,116 @@
           "image": "images/set-farebne-vianoce.webp",
           "url": "/farebne-vianoce---kompletny-set-led-osvetlenia-domu--1480-led/",
           "price": "105,90 €",
+          "oldPrice": "",
+          "discount": ""
+        }
+      ]
+    },
+    "favorites": {
+      "title": "Obľúbené produkty",
+      "subtitle": "Svetielka a dekorácie, ktoré zákazníci vyberajú najčastejšie.",
+      "url": "/vonkajsie-led-svetielka/",
+      "products": [
+        {
+          "name": "Vianočné LED svetielka 1000 LED – 50 m, teplá biela, IP44",
+          "image": "/user/shop/big/522_zimna-rozpravka-s-1000-led-svetlami.png",
+          "url": "/vianocne-led-svetielka-1000-led-50-m-tepla-biela/",
+          "price": "49,90 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočné LED cencúle 200 LED – 8 m, teplá biela, IP44",
+          "image": "/user/shop/big/237_237-led-cencule-200-tepla-1200x800.webp",
+          "url": "/vianocne-led-cencule-200-led-8-m-tepla-biela/",
+          "price": "24,90 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočný LED sob 100 LED – 69 cm, teplá biela, časovač",
+          "image": "/user/shop/big/297_vianocny-svietiaci-sob-s-led-dekoraciou.png",
+          "url": "/vianocny-led-sob-100-led-69-cm-tepla-biela-ip44/",
+          "price": "59,90 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "LED svetelná hadica 480 LED – 20 m, teplá biela, IP44",
+          "image": "/user/shop/big/246_obrazok-chatgpt-28--9--2026--12-50-09.png",
+          "url": "/led-svetelna-hadica-480-led-20-m-tepla-biela/",
+          "price": "29,90 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočný veniec z gulí – bielo-strieborný, 34 cm",
+          "image": "/user/shop/big/426-1_luxusny-vianocny-veniec-zo-55-gul.png",
+          "url": "/vianocny-veniec-z-guli-bielo-strieborny-34-cm/",
+          "price": "24,90 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočné gule na stromček 30 ks – červeno-biele, nerozbitné",
+          "image": "/user/shop/big/363_vianocna-suprava-ozdob-s-30-kusmi--1.png",
+          "url": "/vianocne-gule-30-ks-cerveno-biele-5-5-cm/",
+          "price": "16,90 €",
+          "oldPrice": "",
+          "discount": ""
+        }
+      ]
+    },
+    "deals": {
+      "title": "Výhodná ponuka",
+      "subtitle": "Vianočné doplnky a svetielka do 13 €.",
+      "url": "/dekoracie-do-domacnosti/",
+      "products": [
+        {
+          "name": "Vianočné gule na stromček 30 ks – ružové, nerozbitné",
+          "image": "/user/shop/big/360-2_a9eea526-1255-4279-b524-18f04b376e5c.png",
+          "url": "/vianocne-gule-30-ks-ruzove-4-5-6-cm/",
+          "price": "8,90 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Zlaté vianočné guľôčky na drôtikoch, 6 zväzkov",
+          "image": "/user/shop/big/357_zlate-vianocne-gulocky---6-zvazkov.png",
+          "url": "/zlate-vianocne-gulocky-na-drotikoch-6-zvazkov/",
+          "price": "9,90 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočný škriatok 37 cm – sivý s bielou bradou",
+          "image": "/user/shop/big/417_9019-ca0072-skrzat-gnom-37-cm-m1.jpg",
+          "url": "/vianocny-skriatok-37-cm-sivy/",
+          "price": "9,90 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočné obliečky na vankúše 40 × 40 cm, soby, 4 ks",
+          "image": "/user/shop/big/456-2_194728-ca1459-zestaw-poszewek-swiatecznych-4-szt-m1.jpg",
+          "url": "/vianocne-obliecky-na-vankuse-springos-40x40-cm-4-ks/",
+          "price": "9,99 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Zlatá vianočná reťaz na stromček 6 m – lesklá",
+          "image": "/user/shop/big/477_22570-ca0933-lancuch-choinkowy-6-m-m1.jpg",
+          "url": "/zlata-vianocna-retaz-na-stromcek-6m/",
+          "price": "12,90 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vonkajšia LED reťaz na batérie 100 LED – 10 m, studená biela",
+          "image": "/user/shop/big/267_zasnezeny-ker-so-studenymi-led-svetlami.png",
+          "url": "/vonkajsia-led-retaz-na-baterie-100-led-10-m-studena-biela/",
+          "price": "12,90 €",
           "oldPrice": "",
           "discount": ""
         }
