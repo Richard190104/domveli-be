@@ -242,22 +242,22 @@
     },
     "favorites": {
       "title": "Obľúbené produkty",
-      "subtitle": "Svetielka a dekorácie, ktoré zákazníci vyberajú najčastejšie.",
+      "subtitle": "Cencúle, svetielka a dekorácie, ktoré zákazníci vyberajú najčastejšie.",
       "url": "/vonkajsie-led-svetielka/",
       "products": [
         {
-          "name": "Vianočné LED svetielka 1000 LED – 50 m, teplá biela, IP44",
-          "image": "/user/shop/big/522_zimna-rozpravka-s-1000-led-svetlami.png",
-          "url": "/vianocne-led-svetielka-1000-led-50-m-tepla-biela/",
-          "price": "49,90 €",
+          "name": "Vianočné LED cencúle 500 LED – 20 m, studená biela + FLASH, časovač",
+          "image": "/user/shop/big/48-2_zimne-led-cencule-500-mikro-led--2.png",
+          "url": "/vianocne-led-cencule-500-led-20-m-studena-biela-casovac/",
+          "price": "47,90 €",
           "oldPrice": "",
           "discount": ""
         },
         {
-          "name": "Vianočné LED cencúle 200 LED – 8 m, teplá biela, IP44",
-          "image": "/user/shop/big/237_237-led-cencule-200-tepla-1200x800.webp",
-          "url": "/vianocne-led-cencule-200-led-8-m-tepla-biela/",
-          "price": "24,90 €",
+          "name": "Vianočné LED cencúle 500 LED – 21,5 m, teplá biela + FLASH, časovač",
+          "image": "/user/shop/big/45-2_zimna-noc-s-led-cenculmi-500-led.png",
+          "url": "/vianocne-led-cencule-500-led-21-5-m-tepla-biela-flash/",
+          "price": "47,90 €",
           "oldPrice": "",
           "discount": ""
         },
@@ -266,6 +266,22 @@
           "image": "/user/shop/big/297_vianocny-svietiaci-sob-s-led-dekoraciou.png",
           "url": "/vianocny-led-sob-100-led-69-cm-tepla-biela-ip44/",
           "price": "59,90 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "LED svetelný záves 300 LED – 3 × 3 m, teplá biela, 8 režimov, IP44",
+          "image": "/user/shop/big/303_teple-led-zavesne-svetla-pri-okne.png",
+          "url": "/led-svetelny-zaves-300-led-3x3-m-tepla-biela/",
+          "price": "19,90 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočné LED svetielka 1000 LED – 50 m, teplá biela, IP44",
+          "image": "/user/shop/big/522_zimna-rozpravka-s-1000-led-svetlami.png",
+          "url": "/vianocne-led-svetielka-1000-led-50-m-tepla-biela/",
+          "price": "49,90 €",
           "oldPrice": "",
           "discount": ""
         },
@@ -349,6 +365,17 @@
           "discount": ""
         }
       ]
+    },
+    "featuredProduct": {
+      "kicker": "NAJOBĽÚBENEJŠÍ PRODUKT",
+      "badge": "TOP VÝBER",
+      "title": "Vianočné LED cencúle 500 LED – 20 m, teplá + studená biela",
+      "description": "Teplá aj studená biela v jednom svetelnom závese, 500 LED na dĺžke 20 m. Ideálne na fasádu, terasu či okno.",
+      "image": "/user/shop/big/57-3_led-cencule-500-tepla-studena-flash-1200x800.png",
+      "url": "/vianocne-led-cencule-500-led-20-m-tepla-studena-biela/",
+      "price": "54,90 €",
+      "oldPrice": "",
+      "button": "Pozrieť produkt →"
     }
   },
   "notificationsConfig": [
