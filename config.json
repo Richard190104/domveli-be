@@ -407,12 +407,5 @@
       "activeTo": "2026.11.1"
     }
   ],
-  "navbannerConfig": [
-    {
-      "title": "Akcia",
-      "description": "fASHBJKXC",
-      "buttonText": "aHIOOJ",
-      "link": "/vianocne-gule-a-ozdoby/"
-    }
-  ]
+  "navbannerConfig": []
 }
