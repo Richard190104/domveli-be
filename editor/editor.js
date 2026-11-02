@@ -4,6 +4,7 @@ const REMOTE_URL = 'https://richard190104.github.io/domveli-be/config.json';
 const labels = {
   categories: 'Kategórie', categorySection: 'Úvod kategórií', inspirationBlog: 'Magazín',
   feature: 'O značke', banners: 'Promo bannery', story: 'Príbeh značky', sets: 'Výhodné sety',
+  favorites: 'Obľúbené produkty', deals: 'Výhodná ponuka', featuredProduct: 'Hlavný produkt', badge: 'Štítok (ribbon)',
   notificationsConfig: 'Popup notifikácie', navbannerConfig: 'Horné bannery',
   id: 'Identifikátor', name: 'Názov', title: 'Nadpis', subtitle: 'Podnadpis',
   kicker: 'Text nad nadpisom', uptitle: 'Text nad nadpisom', description: 'Popis',
@@ -72,6 +73,86 @@ function el(tag, className, text) {
   if (text !== undefined) node.textContent = text;
   return node;
 }
+
+// Vysvetlivky: popis sekcií (riadok pod nadpisom) a polí (tooltip pri označení).
+const SECTION_HINTS = {
+  categories: 'Kategórie na domovskej stránke: úvodný text sekcie a posuvný zoznam kariet kategórií. Každá karta vedie do kategórie v e-shope.',
+  inspirationBlog: 'Sekcia Magazín na domovskej stránke: úvodný text a tlačidlo, ktoré vedie na blog.',
+  feature: 'Veľký blok O značke s obrázkom a textom. Tlačidlo vedie na stránku O nás.',
+  banners: 'Tri promo bannery na domovskej stránke: jeden veľký (môže mať viac snímok, ktoré sa striedajú) a dva menšie. Počet a poradie určuje web.',
+  story: 'Textový blok Príbeh značky na domovskej stránke.',
+  sets: 'Posuvný zoznam Výhodné sety: nadpis, podnadpis, odkaz na celú kolekciu a karty produktov.',
+  favorites: 'Posuvný zoznam Obľúbené produkty. Ako prvá karta sa zobrazí Hlavný produkt (väčšia, s ribbonom).',
+  deals: 'Posuvný zoznam Výhodná ponuka: nadpis, podnadpis, odkaz na celú kolekciu a karty produktov.',
+  featuredProduct: 'Zvýraznený produkt na začiatku Obľúbených produktov: väčšia karta s ribbonom, ktorá presahuje nad sekciu.',
+  notificationsConfig: 'Vyskakovacie oznámenia (popup) pre návštevníkov. Zobrazujú sa len v nastavenom období.',
+  navbannerConfig: 'Pás s oznámením úplne hore na stránke.'
+};
+const FIELD_HINTS = {
+  id: 'Interný identifikátor položky. Zákazníkom sa nezobrazuje, bez dôvodu ho nemeň.',
+  name: 'Názov, ktorý sa zobrazí na karte.',
+  title: 'Nadpis, ktorý sa zobrazí zákazníkom.',
+  subtitle: 'Menší text pod nadpisom sekcie.',
+  kicker: 'Krátky text nad nadpisom, zvyčajne veľkými písmenami.',
+  uptitle: 'Krátky text nad nadpisom, zvyčajne veľkými písmenami.',
+  description: 'Popisný text pod nadpisom.',
+  image: 'Obrázok. Vyber súbor a nahrá sa automaticky (JPEG a PNG sa zmenšia a prevedú na WebP). Adresa sa nastaví sama.',
+  images: 'Obrázky snímok. Vyber súbor a nahrá sa automaticky. Adresa sa nastaví sama.',
+  url: 'Kam vedie kliknutie. Interný odkaz píš s lomkou na začiatku, napríklad /svetelne-zavesy/.',
+  link: 'Kam vedie kliknutie. Interný odkaz píš s lomkou na začiatku, napríklad /svetelne-zavesy/.',
+  links: 'Kam vedie kliknutie. Interný odkaz píš s lomkou na začiatku, napríklad /svetelne-zavesy/.',
+  button: 'Text na tlačidle.',
+  buttonText: 'Text na tlačidle.',
+  linkText: 'Text odkazu.',
+  price: 'Aktuálna cena tak, ako sa zobrazí zákazníkom, napríklad 47,90 €.',
+  oldPrice: 'Pôvodná (prečiarknutá) cena. Nechaj prázdne, ak produkt nie je v zľave.',
+  discount: 'Text zľavy na karte, napríklad -20 %. Nechaj prázdne, ak zľava nie je.',
+  activeFrom: 'Od kedy sa oznámenie zobrazuje. Formát RRRR.MM.DD.',
+  activeTo: 'Dokedy sa oznámenie zobrazuje. Formát RRRR.MM.DD.',
+  badge: 'Text na ribbone, napríklad TOP VÝBER.',
+  products: 'Karty produktov v tejto sekcii. Poradie môžeš meniť šípkami.',
+  'banners.title': 'Nadpis snímky. Každá snímka má vlastný nadpis.',
+  'banners.description': 'Text pod nadpisom snímky.',
+  'banners.button': 'Text tlačidla banneru.',
+  'banners.links': 'Kam vedie snímka. Interný odkaz píš s lomkou, napríklad /svetelne-zavesy/.',
+  'sets.title': 'Nadpis sekcie Výhodné sety.',
+  'favorites.title': 'Nadpis sekcie Obľúbené produkty.',
+  'deals.title': 'Nadpis sekcie Výhodná ponuka.',
+  'sets.url': 'Kam vedie odkaz na celú kolekciu pri nadpise sekcie.',
+  'favorites.url': 'Kam vedie odkaz na celú kolekciu pri nadpise sekcie.',
+  'deals.url': 'Kam vedie odkaz na celú kolekciu pri nadpise sekcie.',
+  'featuredProduct.kicker': 'Text nad nadpisom hlavného produktu, napríklad NAJOBĽÚBENEJŠÍ PRODUKT.',
+  'featuredProduct.title': 'Názov hlavného produktu.',
+  'featuredProduct.description': 'Krátky popis hlavného produktu pod názvom.',
+  'featuredProduct.button': 'Text tlačidla pri hlavnom produkte.',
+  'featuredProduct.url': 'Stránka produktu v e-shope. Rovnaký produkt sa v zozname Obľúbených nezobrazí druhýkrát.',
+  'categories.name': 'Názov kategórie na karte.',
+  'categories.url': 'Adresa kategórie v e-shope, napríklad /svetelne-zavesy/.',
+  'categorySection.title': 'Nadpis nad zoznamom kategórií.',
+  'categorySection.linkText': 'Text odkazu pri nadpise sekcie kategórií.',
+  'notificationsConfig.title': 'Nadpis vyskakovacieho okna.',
+  'notificationsConfig.description': 'Text vyskakovacieho okna.',
+  'notificationsConfig.link': 'Kam vedie tlačidlo v okne.',
+  'notificationsConfig.buttonText': 'Text tlačidla v okne.'
+};
+function sectionKey(path) { return path[0] === 'DOMVELI_CONFIG' ? path[1] : path[0]; }
+function hintFor(path) {
+  const key = [...path].reverse().find(item => typeof item === 'string');
+  const section = sectionKey(path);
+  return FIELD_HINTS[`${section}.${key}`] || FIELD_HINTS[key] || '';
+}
+function tip(text) {
+  const wrap = el('span', 'tip');
+  const trigger = el('button', 'tip-btn', '?');
+  trigger.type = 'button'; trigger.setAttribute('aria-label', 'Vysvetlivka');
+  const box = el('span', 'tip-text', text); box.setAttribute('role', 'tooltip');
+  trigger.addEventListener('click', event => { event.preventDefault(); event.stopPropagation(); wrap.classList.toggle('open'); });
+  trigger.addEventListener('blur', () => wrap.classList.remove('open'));
+  wrap.append(trigger, box);
+  return wrap;
+}
+function setLabel(field, text) { const label = field.querySelector('.field-label'); if (label) label.textContent = text; }
+document.addEventListener('keydown', event => { if (event.key === 'Escape') document.querySelectorAll('.tip.open').forEach(node => node.classList.remove('open')); });
 function message(text) { $('status').textContent = text; }
 function changed() {
   dirty = true;
@@ -97,7 +178,8 @@ function accept(value, source) {
   $('publish').disabled = !directory;
   referencedImages(config).forEach(name => managedImages.add(name));
   $('sections').replaceChildren();
-  const sections = [...Object.keys(config.DOMVELI_CONFIG).map(key => ['DOMVELI_CONFIG', key]),
+  // Úvod kategórií sa upravuje v sekcii Kategórie.
+  const sections = [...Object.keys(config.DOMVELI_CONFIG).filter(key => key !== 'categorySection').map(key => ['DOMVELI_CONFIG', key]),
     ...Object.keys(config).filter(key => key !== 'DOMVELI_CONFIG').map(key => [key])];
   sections.forEach(path => {
     const button = el('button', '', labels[path.at(-1)] || path.at(-1));
@@ -112,8 +194,16 @@ function accept(value, source) {
 }
 function openSection(path) {
   activePath = path;
+  $('section-hint').textContent = SECTION_HINTS[sectionKey(path)] || '';
   $('title').textContent = labels[path.at(-1)] || path.at(-1);
   $('sections').querySelectorAll('button').forEach(button => button.setAttribute('aria-current', String(button.dataset.path === JSON.stringify(path))));
+  if (JSON.stringify(path) === '["DOMVELI_CONFIG","categories"]' && config.DOMVELI_CONFIG.categorySection) {
+    const introPath = ['DOMVELI_CONFIG','categorySection'];
+    const intro = el('div', 'card');
+    intro.append(el('h2', '', labels.categorySection), renderValue(at(introPath), introPath));
+    $('fields').replaceChildren(intro, renderValue(at(path), path));
+    return;
+  }
   $('fields').replaceChildren(renderValue(at(path), path));
 }
 function button(text, action, className = '') {
@@ -149,12 +239,19 @@ function renderValue(value, path) {
   }
   if (Array.isArray(value)) {
     const wrapper = el('div', 'card');
-    wrapper.append(el('h2', '', labels[key] || String(key)));
+    const arrayHead = el('h2', '', labels[key] || String(key));
+    const arrayHint = hintFor(path); if (arrayHint) arrayHead.append(tip(arrayHint));
+    wrapper.append(arrayHead);
+    const isBanners = path.length === 2 && path[0] === 'DOMVELI_CONFIG' && key === 'banners';
     value.forEach((item, index) => {
+      if (isBanners && index < 2) wrapper.append(el('h3', 'group-title', index === 0 ? 'Veľký banner' : 'Menšie bannery'));
       const card = el('div', 'card');
       const head = el('div', 'item-head');
       const itemTitle = Array.isArray(item?.title) ? item.title[0] : item?.title;
-      head.append(el('strong', '', `${index + 1}. ${item?.name || itemTitle || item?.id || 'Položka'}`));
+      const headText = isBanners
+        ? `${index === 0 ? 'Veľký banner' : `Menší banner ${index}`}${item?.id ? ` (${item.id})` : ''}`
+        : `${index + 1}. ${item?.name || itemTitle || item?.id || 'Položka'}`;
+      head.append(el('strong', '', headText));
       const actions = el('div', 'item-actions');
       const move = delta => { [value[index],value[index + delta]] = [value[index + delta],value[index]]; changed(); openSection(activePath); };
       const up = button('↑', () => move(-1)); up.disabled = index === 0; up.setAttribute('aria-label', 'Presunúť vyššie');
@@ -164,7 +261,9 @@ function renderValue(value, path) {
         value.splice(index, 1); changed(); openSection(activePath);
       }, 'danger'));
       if (item && typeof item === 'object') actions.append(button('Duplikovať', () => { value.splice(index + 1, 0, clone(item)); changed(); openSection(activePath); }));
-      head.append(actions); card.append(head, renderValue(item, [...path, index])); wrapper.append(card);
+      // Počet a poradie bannerov určuje web (1 veľký + 2 menšie), preto sa tu nemenia.
+      if (!isBanners) head.append(actions);
+      card.append(head, renderValue(item, [...path, index])); wrapper.append(card);
     });
     if (!(path.length === 2 && path[0] === 'DOMVELI_CONFIG' && key === 'banners')) wrapper.append(button('+ Pridať položku', () => {
       value.push(clone(templates[key] || (value.length ? blank(value[0]) : '')));
@@ -213,7 +312,9 @@ function renderValue(value, path) {
     set(path, typeof value === 'boolean' ? input.checked : typeof value === 'number' ? Number(input.value) : input.value);
     if (isImage(path)) updatePreview();
   });
-  wrapper.append(label, input);
+  const row = el('div', 'label-row'); row.append(label);
+  const help = hintFor(path); if (help) row.append(tip(help));
+  wrapper.append(row, input);
   if (key === 'activeFrom' || key === 'activeTo') {
     input.placeholder = '2026.10.14';
     wrapper.append(el('span', 'small', 'Formát dátumu: RRRR.MM.DD alebo RRRR-MM-DD.'));
@@ -334,7 +435,7 @@ function renderBanner(banner, path) {
     const imageKey = Array.isArray(banner.images) ? 'images' : 'image';
     const imagePath = imageKey === 'images' ? [...path,'images',index] : [...path,'image'];
     const imageField = renderValue(imageKey === 'images' ? banner.images[index] || '' : banner.image || '',imagePath);
-    imageField.children[0].textContent = 'Obrázok';
+    setLabel(imageField, 'Obrázok');
     media.append(imageField);
     if (!(imageKey === 'images' ? banner.images[index] : banner.image)) {
       media.append(el('p','small','Bez obrázka sa táto snímka na e-shope nezobrazí.'));
@@ -342,7 +443,7 @@ function renderBanner(banner, path) {
     const texts = el('div', 'banner-slide-texts');
     for (const key of arrays.filter(key => key !== 'images')) {
       const field = renderValue(banner[key][index] ?? banner[key][0] ?? '',[...path,key,index]);
-      field.children[0].textContent = labels[key] || key;
+      setLabel(field, labels[key] || key);
       texts.append(field);
     }
     if (!texts.children.length) texts.append(el('p','small','Texty a odkaz sa nastavujú spoločné pre všetky snímky.'));

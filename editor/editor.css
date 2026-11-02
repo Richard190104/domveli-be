@@ -8,3 +8,14 @@ dialog{width:min(480px,calc(100% - 40px));border:1px solid var(--line);padding:2
 .deployment-meta{display:flex;justify-content:space-between;gap:16px;font-size:13px;color:#827569}.deployment-meta #deployment-timer{font-variant-numeric:tabular-nums;white-space:nowrap}
 
 #app.locked header, #app.locked aside, #app.locked main { opacity: .55; pointer-events: none; }
+
+.group-title { margin: 28px 0 10px; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #8a7b6a; }
+.group-title:first-of-type { margin-top: 8px; }
+
+.section-hint{margin:8px 0 0;max-width:640px;font-size:13px;line-height:1.6;color:#827569}
+.label-row{display:flex;align-items:center;gap:8px}
+h2 .tip{margin-left:8px;vertical-align:middle}
+.tip{position:relative;display:inline-flex}
+.tip-btn{width:18px;height:18px;padding:0;border-radius:50%;border:1px solid #cdbda6;background:#fff;color:#947242;font-size:11px;font-weight:700;line-height:1;display:inline-flex;align-items:center;justify-content:center}
+.tip-text{position:absolute;left:0;top:26px;z-index:20;width:max-content;max-width:280px;padding:10px 12px;background:#382b23;color:#fff;font-size:12px;font-weight:400;line-height:1.55;letter-spacing:0;text-transform:none;white-space:normal;display:none;box-shadow:0 6px 20px rgba(56,43,35,.18)}
+.tip:hover .tip-text,.tip:focus-within .tip-text,.tip.open .tip-text{display:block}
