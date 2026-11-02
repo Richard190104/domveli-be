@@ -462,7 +462,7 @@ function signOut() {
 async function callPublish(payload) {
   const response = await fetch(`${SUPABASE_URL}/functions/v1/domveli-publish`, {
     method:'POST',
-    headers:{apikey:SUPABASE_KEY,Authorization:`Bearer ${await accessToken()}`,'Content-Type':'application/json'},
+    headers:{Authorization:`Bearer ${await accessToken()}`,'Content-Type':'application/json'},
     body:JSON.stringify(payload), signal:AbortSignal.timeout(120000)
   });
   const result = await response.json().catch(() => ({}));
