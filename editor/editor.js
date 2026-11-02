@@ -494,7 +494,7 @@ async function prepareImage(file) {
       canvas.getContext('2d').drawImage(bitmap, 0, 0, canvas.width, canvas.height);
       const converted = await new Promise(resolve => canvas.toBlob(resolve, 'image/webp', .8));
       if (!converted) throw new Error('Obrázok sa nepodarilo spracovať.');
-      if (converted.type === 'image/webp') { blob = converted; extension = 'webp'; }
+      if (converted.type === 'image/webp' && (scale < 1 || converted.size < file.size || file.type !== 'image/webp')) { blob = converted; extension = 'webp'; }
     } finally { bitmap.close(); }
   }
   const stem = file.name.replace(/\.[^.]+$/, '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,60) || 'obrazok';
