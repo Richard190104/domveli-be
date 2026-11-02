@@ -483,16 +483,16 @@ async function prepareImage(file) {
   if (file.size > 20 * 1024 * 1024) throw new Error('Maximálna veľkosť obrázka je 20 MB.');
   let blob = file;
   let extension = { 'image/jpeg':'jpg', 'image/png':'png', 'image/webp':'webp', 'image/avif':'avif', 'image/gif':'gif' }[file.type];
-  // Animované formáty zachováme; JPEG a PNG optimalizujeme pre web.
-  if (['image/jpeg','image/png'].includes(file.type)) {
+  // GIF (animácie) zachováme; ostatné formáty zmenšíme na max 1400 px a uložíme ako WebP.
+  if (['image/jpeg','image/png','image/webp','image/avif'].includes(file.type)) {
     const bitmap = await createImageBitmap(file);
     try {
-      const scale = Math.min(1, 1920 / Math.max(bitmap.width, bitmap.height));
+      const scale = Math.min(1, 1400 / Math.max(bitmap.width, bitmap.height));
       const canvas = document.createElement('canvas');
       canvas.width = Math.max(1, Math.round(bitmap.width * scale));
       canvas.height = Math.max(1, Math.round(bitmap.height * scale));
       canvas.getContext('2d').drawImage(bitmap, 0, 0, canvas.width, canvas.height);
-      const converted = await new Promise(resolve => canvas.toBlob(resolve, 'image/webp', .85));
+      const converted = await new Promise(resolve => canvas.toBlob(resolve, 'image/webp', .8));
       if (!converted) throw new Error('Obrázok sa nepodarilo spracovať.');
       if (converted.type === 'image/webp') { blob = converted; extension = 'webp'; }
     } finally { bitmap.close(); }
