@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DOMVELI · Editor konfigurácie</title>
+  <link rel="stylesheet" href="editor.css">
+  <script src="editor.js" defer></script>
+</head>
+<body>
+  <section id="gate" class="card" style="max-width:360px;margin:12vh auto">
+    <h1>DOMVELI</h1>
+    <form id="login">
+      <label class="field">E-mail<input id="email" type="email" autocomplete="username" required></label>
+      <label class="field">Heslo<input id="password" type="password" autocomplete="current-password" required></label>
+      <button id="login-submit" class="primary" type="submit">Prihlásiť</button>
+      <p id="login-message" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+  <div id="app" hidden>
+  <header>
+    <div><a class="brand" href="./">DOMVELI</a><span class="subtitle">Správa obsahu</span></div>
+    <div class="actions">
+      <button id="remote" type="button">Načítať z webu</button>
+      <button id="export" class="primary" type="button" disabled>Stiahnuť config.json</button>
+      <button id="publish" class="primary" type="button" disabled>Nahrať</button>
+      <button id="logout" type="button">Odhlásiť</button>
+    </div>
+  </header>
+  <div class="layout">
+    <aside><p class="eyebrow">KONFIGURÁCIA</p><nav id="sections" aria-label="Sekcie konfigurácie"></nav>
+      <p class="hint">Na GitHub sa odosiela len config.json a použité obrázky. Zmeny sa prejavia na e-shope po nasadení.</p>
+    </aside>
+    <main>
+      <div class="heading"><div><p class="eyebrow">DOMVELI EDITOR</p><h1 id="title">Načítavam konfiguráciu…</h1></div><span id="state" class="badge">Bez zmien</span></div>
+      <p id="status" role="status" aria-live="polite"></p>
+      <div id="fields"></div>
+      <section class="card"><h2>Publikovanie</h2><p class="small">Config a obrázky sa odošlú cez zabezpečenú funkciu do repozitára domveli-be. GitHub token v prehliadači nie je.</p></section>
+      <details class="json"><summary>Kontrola výsledného JSON-u</summary><pre id="json"></pre></details>
+    </main>
+  </div>
+  <dialog id="deployment-dialog" aria-labelledby="deployment-title" aria-describedby="deployment-message">
+    <h2 id="deployment-title">Publikovanie zmien</h2>
+    <p class="deployment-meta"><span id="deployment-phase">Nahrávanie súborov</span><span id="deployment-timer" aria-label="Uplynutý čas">00:00</span></p>
+    <div id="deployment-progress" class="deployment-progress" aria-hidden="true"></div>
+    <p id="deployment-message" role="status" aria-live="polite">Nahrávam…</p>
+    <a id="deployment-link" target="_blank" rel="noopener noreferrer" hidden>Otvoriť GitHub Actions</a>
+    <div class="deployment-actions">
+      <button id="deployment-retry" type="button" hidden>Skúsiť znova</button>
+      <button id="deployment-close" type="button" hidden>Hotovo</button>
+    </div>
+  </dialog>
+  </div>
+</body>
+</html>
+
