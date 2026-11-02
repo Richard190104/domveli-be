@@ -4,6 +4,7 @@ const REMOTE_URL = 'https://richard190104.github.io/domveli-be/config.json';
 const labels = {
   categories: 'Kategórie', categorySection: 'Úvod kategórií', inspirationBlog: 'Magazín',
   feature: 'O značke', banners: 'Promo bannery', story: 'Príbeh značky', sets: 'Výhodné sety',
+  seo: 'SEO text', text: 'Text', items: 'Blokové body',
   favorites: 'Obľúbené produkty', deals: 'Výhodná ponuka', featuredProduct: 'Hlavný produkt', badge: 'Štítok (ribbon)',
   notificationsConfig: 'Popup notifikácie', navbannerConfig: 'Horné bannery',
   id: 'Identifikátor', name: 'Názov', title: 'Nadpis', subtitle: 'Podnadpis',
@@ -86,7 +87,8 @@ const SECTION_HINTS = {
   deals: 'Posuvný zoznam Výhodná ponuka: nadpis, podnadpis, odkaz na celú kolekciu a karty produktov.',
   featuredProduct: 'Zvýraznený produkt na začiatku Obľúbených produktov: väčšia karta s ribbonom, ktorá presahuje nad sekciu.',
   notificationsConfig: 'Vyskakovacie oznámenia (popup) pre návštevníkov. Zobrazujú sa len v nastavenom období.',
-  navbannerConfig: 'Pás s oznámením úplne hore na stránke.'
+  navbannerConfig: 'Pás s oznámením úplne hore na stránke.',
+  seo: 'Tmavá SEO sekcia na konci domovskej stránky: úvodný nadpis a text, pod nimi blokové body s číslami. Text je dôležitý pre vyhľadávače, píš ho zrozumiteľne a bez zbytočného opakovania.'
 };
 const FIELD_HINTS = {
   id: 'Interný identifikátor položky. Zákazníkom sa nezobrazuje, bez dôvodu ho nemeň.',
@@ -126,6 +128,13 @@ const FIELD_HINTS = {
   'featuredProduct.description': 'Krátky popis hlavného produktu pod názvom.',
   'featuredProduct.button': 'Text tlačidla pri hlavnom produkte.',
   'featuredProduct.url': 'Stránka produktu v e-shope. Rovnaký produkt sa v zozname Obľúbených nezobrazí druhýkrát.',
+  'seo.kicker': 'Krátky text nad nadpisom SEO sekcie.',
+  'seo.title': 'Hlavný nadpis SEO sekcie. Mal by obsahovať kľúčové slová, napríklad vianočné LED osvetlenie.',
+  'seo.subtitle': 'Úvodná veta pod nadpisom.',
+  'seo.text': 'Hlavný SEO text sekcie. Písať ho treba prirodzene, pre zákazníka.',
+  'seo.items': 'Blokové body pod textom (odporúčané 3). Zobrazujú sa s poradovým číslom 01, 02, 03.',
+  'seo.items.title': 'Nadpis blokového bodu.',
+  'seo.items.text': 'Krátky popis bodu, jedna až dve vety.',
   'categories.name': 'Názov kategórie na karte.',
   'categories.url': 'Adresa kategórie v e-shope, napríklad /svetelne-zavesy/.',
   'categorySection.title': 'Nadpis nad zoznamom kategórií.',
@@ -137,9 +146,10 @@ const FIELD_HINTS = {
 };
 function sectionKey(path) { return path[0] === 'DOMVELI_CONFIG' ? path[1] : path[0]; }
 function hintFor(path) {
-  const key = [...path].reverse().find(item => typeof item === 'string');
+  const names = path.filter(item => typeof item === 'string');
+  const key = names.at(-1), parent = names.at(-2);
   const section = sectionKey(path);
-  return FIELD_HINTS[`${section}.${key}`] || FIELD_HINTS[key] || '';
+  return FIELD_HINTS[`${section}.${parent}.${key}`] || FIELD_HINTS[`${section}.${key}`] || FIELD_HINTS[key] || '';
 }
 function tip(text) {
   const wrap = el('span', 'tip');
@@ -221,6 +231,7 @@ function blank(value) {
 }
 const templates = {
   categories: {id:'',name:'',url:'',image:''},
+  items: {title:'',text:''},
   banners: {id:'',images:[],uptitle:'',title:[],description:[],button:'',links:[]},
   products: {name:'',image:'',url:'',price:'',oldPrice:'',discount:''},
   articles: {title:'',description:'',image:'',url:''},

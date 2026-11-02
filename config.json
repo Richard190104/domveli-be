@@ -376,6 +376,26 @@
       "price": "54,90 €",
       "oldPrice": "",
       "button": "Pozrieť produkt →"
+    },
+    "seo": {
+      "kicker": "DOMVELI",
+      "title": "Vianočné LED osvetlenie a dekorácie pre váš domov",
+      "subtitle": "Vytvorte si čarovnú vianočnú atmosféru s exkluzívnym osvetlením a dekoráciami",
+      "text": "Hľadáte spôsob, ako premeniť svoj domov na oázu sviatočnej pohody? V e-shope Domveli prinášame starostlivo vyberané vianočné osvetlenie a dekorácie, ktoré dodajú vášmu interiéru aj exteriéru hrejivý šmrnc. Či už plánujete kompletnú výzdobu, alebo zháňate spoľahlivé vonkajšie vianočné osvetlenie domu, u nás nakúpite rýchlo, bezpečne a s istotou.",
+      "items": [
+        {
+          "title": "Výhodné vianočné sety dekorácií",
+          "text": "Ušetrite čas aj peniaze. Naše tematické vianočné sety na balkón aj stôl k sebe farebne a štýlovo dokonale pasujú."
+        },
+        {
+          "title": "Bezpečné vonkajšie LED svetielka",
+          "text": "Certifikované vianočné LED cencúle a reťaze s vysokou odolnosťou voči mrazu a dažďu pre váš dom či terasu."
+        },
+        {
+          "title": "Odborné poradenstvo a tipy",
+          "text": "Neviete, koľko svetielok potrebujete na stromček? Prečítajte si náš praktický sprievodca výberom."
+        }
+      ]
     }
   },
   "notificationsConfig": [
