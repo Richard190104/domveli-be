@@ -45,6 +45,11 @@ let busyUploads = 0;
 let publishing = false;
 let deploymentFailed = false;
 let pendingCommit;
+let reloadAfterClose = false;
+function lockInterface(locked) {
+  ['header','aside','main'].forEach(tag => { const node = document.querySelector(tag); if (node) node.inert = locked; });
+  $('app').classList.toggle('locked', locked);
+}
 let deploymentTimer;
 function startDeploymentTimer() {
   clearInterval(deploymentTimer);
@@ -89,7 +94,6 @@ function accept(value, source) {
   config = clone(value);
   dirty = false;
   $('state').textContent = 'Bez zmien';
-  $('export').disabled = false;
   $('publish').disabled = !directory;
   referencedImages(config).forEach(name => managedImages.add(name));
   $('sections').replaceChildren();
@@ -385,30 +389,11 @@ async function prepareImage(file) {
   const name = `${stem}-${Date.now()}-${Math.random().toString(36).slice(2,8)}.${extension}`;
   return {name, url:`images/${name}`, blob, preview:URL.createObjectURL(blob)};
 }
-function download(blob, name) {
-  const url = URL.createObjectURL(blob);
-  const link = el('a'); link.href = url; link.download = name;
-  document.body.append(link); link.click(); link.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
-}
 async function load(url, source) {
-  const response = await fetch(url, {cache:'no-cache', signal:AbortSignal.timeout(10000)});
+  const response = await fetch(`${url}?t=${Date.now()}`, {cache:'no-store', signal:AbortSignal.timeout(10000)});
   if (!response.ok) throw new Error(`Načítanie zlyhalo: HTTP ${response.status}`);
   accept(await response.json(), source);
 }
-function canReplace() { return !dirty || confirm('Načítanie nahradí neexportované zmeny aj pripravené obrázky. Pokračovať?'); }
-$('remote').addEventListener('click', async () => {
-  if (!canReplace()) return;
-  $('remote').disabled = true;
-  try { await load(REMOTE_URL, 'GitHub Pages'); } catch (error) { message(error.message); }
-  finally { $('remote').disabled = false; }
-});
-$('export').addEventListener('click', () => {
-  validate(config);
-  download(new Blob([JSON.stringify(config, null, 2) + '\n'], {type:'application/json'}), 'config.json');
-  message('Config exportovaný. Pre publikovanie použi Nahrať.');
-  $('state').textContent = 'JSON exportovaný';
-});
 async function writeFile(parent, name, content) {
   const handle = await parent.getFileHandle(name, {create:true});
   const stream = await handle.createWritable();
@@ -527,7 +512,7 @@ async function performPublish() {
   if (!directory || busyUploads || publishing && !deploymentFailed) return;
   deploymentFailed = false;
   publishing = true; $('publish').disabled = true;
-  $('fields').inert = true; $('remote').disabled = true; $('export').disabled = true;
+  lockInterface(true);
   const dialog = $('deployment-dialog');
   if (!dialog.open) dialog.showModal();
   $('deployment-phase').textContent = pendingCommit ? 'Sledovanie nasadenia' : 'Nahrávanie súborov';
@@ -552,6 +537,7 @@ async function performPublish() {
     $('deployment-phase').textContent = 'Nasadenie dokončené';
     deploymentStatus(`Deployed — zmeny z commitu ${pendingCommit.slice(0,7)} sú úspešne nasadené.`);
     pendingCommit = undefined;
+    reloadAfterClose = true;
     publishing = false;
     $('deployment-close').hidden = false;
     $('deployment-close').focus();
@@ -577,8 +563,9 @@ $('deployment-close').addEventListener('click', () => {
   deploymentFailed = false;
   pendingCommit = undefined;
   $('deployment-dialog').close();
-  $('publish').disabled = false; $('fields').inert = false; $('remote').disabled = false;
-  $('export').disabled = false; $('publish').focus();
+  lockInterface(false);
+  $('publish').disabled = false; $('publish').focus();
+  if (reloadAfterClose) { reloadAfterClose = false; memoryFiles.clear(); load(REMOTE_URL, 'GitHub Pages').catch(error => message(`Načítanie zlyhalo: ${error.message}`)); }
 });
 window.addEventListener('beforeunload', event => { if (dirty || publishing) { event.preventDefault(); event.returnValue = ''; } });
 directory = memoryDirectory();
