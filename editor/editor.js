@@ -2,16 +2,14 @@
 
 const REMOTE_URL = 'https://richard190104.github.io/domveli-be/config.json';
 const labels = {
-  categories: 'Kategórie', categorySection: 'Úvod kategórií', inspirationBlog: 'Magazín',
-  feature: 'O značke', banners: 'Promo bannery', story: 'Príbeh značky', sets: 'Výhodné sety',
-  seo: 'SEO text', text: 'Text', items: 'Blokové body',
+  categories: 'Kategórie', banners: 'Promo bannery', sets: 'Výhodné sety', footer: 'Pätička',
   favorites: 'Obľúbené produkty', deals: 'Výhodná ponuka', featuredProduct: 'Hlavný produkt', badge: 'Štítok (ribbon)',
   notificationsConfig: 'Popup notifikácie', navbannerConfig: 'Horné bannery',
   id: 'Identifikátor', name: 'Názov', title: 'Nadpis', subtitle: 'Podnadpis',
   kicker: 'Text nad nadpisom', uptitle: 'Text nad nadpisom', description: 'Popis',
   image: 'Obrázok', images: 'Obrázky', url: 'Odkaz', link: 'Odkaz', links: 'Odkazy',
   button: 'Text tlačidla', buttonText: 'Text tlačidla', linkText: 'Text odkazu',
-  articles: 'Články (záložné dáta)', products: 'Produkty', price: 'Cena',
+  products: 'Produkty', price: 'Cena',
   oldPrice: 'Pôvodná cena', discount: 'Zľava', activeFrom: 'Aktívne od', activeTo: 'Aktívne do'
 };
 let config;
@@ -77,18 +75,15 @@ function el(tag, className, text) {
 
 // Vysvetlivky: popis sekcií (riadok pod nadpisom) a polí (tooltip pri označení).
 const SECTION_HINTS = {
-  categories: 'Kategórie na domovskej stránke: úvodný text sekcie a posuvný zoznam kariet kategórií. Každá karta vedie do kategórie v e-shope.',
-  inspirationBlog: 'Sekcia Magazín na domovskej stránke: úvodný text a tlačidlo, ktoré vedie na blog.',
-  feature: 'Veľký blok O značke s obrázkom a textom. Tlačidlo vedie na stránku O nás.',
+  categories: 'Posuvný zoznam kariet kategórií na domovskej stránke. Každá karta vedie do kategórie v e-shope. Nadpisy a texty sekcií sú priamo v Shoptete.',
+  footer: 'Krátky popis značky v pätičke webu.',
   banners: 'Tri promo bannery na domovskej stránke: jeden veľký (môže mať viac snímok, ktoré sa striedajú) a dva menšie. Počet a poradie určuje web.',
-  story: 'Textový blok Príbeh značky na domovskej stránke.',
-  sets: 'Posuvný zoznam Výhodné sety: nadpis, podnadpis, odkaz na celú kolekciu a karty produktov.',
+  sets: 'Karty produktov v posuvnom zozname Výhodné sety. Nadpis a úvod sekcie sú v Shoptete.',
   favorites: 'Posuvný zoznam Obľúbené produkty. Ako prvá karta sa zobrazí Hlavný produkt (väčšia, s ribbonom).',
-  deals: 'Posuvný zoznam Výhodná ponuka: nadpis, podnadpis, odkaz na celú kolekciu a karty produktov.',
-  featuredProduct: 'Zvýraznený produkt na začiatku Obľúbených produktov: väčšia karta s ribbonom, ktorá presahuje nad sekciu.',
+  deals: 'Karty produktov v posuvnom zozname Výhodná ponuka. Nadpis a úvod sekcie sú v Shoptete.',
+  featuredProduct: 'Zvýraznený produkt na začiatku Obľúbených produktov: väčšia karta s ribbonom.',
   notificationsConfig: 'Vyskakovacie oznámenia (popup) pre návštevníkov. Zobrazujú sa len v nastavenom období.',
-  navbannerConfig: 'Pás s oznámením úplne hore na stránke.',
-  seo: 'Tmavá SEO sekcia na konci domovskej stránky: úvodný nadpis a text, pod nimi blokové body s číslami. Text je dôležitý pre vyhľadávače, píš ho zrozumiteľne a bez zbytočného opakovania.'
+  navbannerConfig: 'Pás s oznámením úplne hore na stránke.'
 };
 const FIELD_HINTS = {
   id: 'Interný identifikátor položky. Zákazníkom sa nezobrazuje, bez dôvodu ho nemeň.',
@@ -117,28 +112,11 @@ const FIELD_HINTS = {
   'banners.description': 'Text pod nadpisom snímky.',
   'banners.button': 'Text tlačidla banneru.',
   'banners.links': 'Kam vedie snímka. Interný odkaz píš s lomkou, napríklad /svetelne-zavesy/.',
-  'sets.title': 'Nadpis sekcie Výhodné sety.',
-  'favorites.title': 'Nadpis sekcie Obľúbené produkty.',
-  'deals.title': 'Nadpis sekcie Výhodná ponuka.',
-  'sets.url': 'Kam vedie odkaz na celú kolekciu pri nadpise sekcie.',
-  'favorites.url': 'Kam vedie odkaz na celú kolekciu pri nadpise sekcie.',
-  'deals.url': 'Kam vedie odkaz na celú kolekciu pri nadpise sekcie.',
-  'featuredProduct.kicker': 'Text nad nadpisom hlavného produktu, napríklad NAJOBĽÚBENEJŠÍ PRODUKT.',
   'featuredProduct.title': 'Názov hlavného produktu.',
-  'featuredProduct.description': 'Krátky popis hlavného produktu pod názvom.',
-  'featuredProduct.button': 'Text tlačidla pri hlavnom produkte.',
   'featuredProduct.url': 'Stránka produktu v e-shope. Rovnaký produkt sa v zozname Obľúbených nezobrazí druhýkrát.',
-  'seo.kicker': 'Krátky text nad nadpisom SEO sekcie.',
-  'seo.title': 'Hlavný nadpis SEO sekcie. Mal by obsahovať kľúčové slová, napríklad vianočné LED osvetlenie.',
-  'seo.subtitle': 'Úvodná veta pod nadpisom.',
-  'seo.text': 'Hlavný SEO text sekcie. Písať ho treba prirodzene, pre zákazníka.',
-  'seo.items': 'Blokové body pod textom (odporúčané 3). Zobrazujú sa s poradovým číslom 01, 02, 03.',
-  'seo.items.title': 'Nadpis blokového bodu.',
-  'seo.items.text': 'Krátky popis bodu, jedna až dve vety.',
   'categories.name': 'Názov kategórie na karte.',
   'categories.url': 'Adresa kategórie v e-shope, napríklad /svetelne-zavesy/.',
-  'categorySection.title': 'Nadpis nad zoznamom kategórií.',
-  'categorySection.linkText': 'Text odkazu pri nadpise sekcie kategórií.',
+  'footer.description': 'Popis značky, ktorý sa zobrazí v pätičke.',
   'notificationsConfig.title': 'Nadpis vyskakovacieho okna.',
   'notificationsConfig.description': 'Text vyskakovacieho okna.',
   'notificationsConfig.link': 'Kam vedie tlačidlo v okne.',
@@ -172,8 +150,7 @@ function changed() {
 }
 function validate(value) {
   if (!value?.DOMVELI_CONFIG || !Array.isArray(value.DOMVELI_CONFIG.categories) ||
-      !Array.isArray(value.DOMVELI_CONFIG.banners) || !value.DOMVELI_CONFIG.categorySection ||
-      !value.DOMVELI_CONFIG.story || !value.DOMVELI_CONFIG.inspirationBlog ||
+      !Array.isArray(value.DOMVELI_CONFIG.banners) ||
       !Array.isArray(value.notificationsConfig) || !Array.isArray(value.navbannerConfig)) {
     throw new Error('JSON nemá očakávané sekcie konfigurácie DOMVELI.');
   }
@@ -188,8 +165,7 @@ function accept(value, source) {
   $('publish').disabled = !directory;
   referencedImages(config).forEach(name => managedImages.add(name));
   $('sections').replaceChildren();
-  // Úvod kategórií sa upravuje v sekcii Kategórie.
-  const sections = [...Object.keys(config.DOMVELI_CONFIG).filter(key => key !== 'categorySection').map(key => ['DOMVELI_CONFIG', key]),
+  const sections = [...Object.keys(config.DOMVELI_CONFIG).map(key => ['DOMVELI_CONFIG', key]),
     ...Object.keys(config).filter(key => key !== 'DOMVELI_CONFIG').map(key => [key])];
   sections.forEach(path => {
     const button = el('button', '', labels[path.at(-1)] || path.at(-1));
@@ -207,13 +183,6 @@ function openSection(path) {
   $('section-hint').textContent = SECTION_HINTS[sectionKey(path)] || '';
   $('title').textContent = labels[path.at(-1)] || path.at(-1);
   $('sections').querySelectorAll('button').forEach(button => button.setAttribute('aria-current', String(button.dataset.path === JSON.stringify(path))));
-  if (JSON.stringify(path) === '["DOMVELI_CONFIG","categories"]' && config.DOMVELI_CONFIG.categorySection) {
-    const introPath = ['DOMVELI_CONFIG','categorySection'];
-    const intro = el('div', 'card');
-    intro.append(el('h2', '', labels.categorySection), renderValue(at(introPath), introPath));
-    $('fields').replaceChildren(intro, renderValue(at(path), path));
-    return;
-  }
   $('fields').replaceChildren(renderValue(at(path), path));
 }
 function button(text, action, className = '') {
@@ -234,7 +203,6 @@ const templates = {
   items: {title:'',text:''},
   banners: {id:'',images:[],uptitle:'',title:[],description:[],button:'',links:[]},
   products: {name:'',image:'',url:'',price:'',oldPrice:'',discount:''},
-  articles: {title:'',description:'',image:'',url:''},
   notificationsConfig: {title:'',description:'',images:[],buttonText:'',link:'',activeFrom:'',activeTo:''},
   navbannerConfig: {title:'',description:'',buttonText:'',link:''}
 };
@@ -289,7 +257,6 @@ function renderValue(value, path) {
     const fields = el('div', 'compact-fields');
     const nested = el('div', 'compact-nested');
     for (const [childKey, item] of Object.entries(value)) {
-      if (path.length === 2 && path[0] === 'DOMVELI_CONFIG' && path[1] === 'inspirationBlog' && childKey === 'articles') continue;
       const field = renderValue(item, [...path, childKey]);
       if (childKey === 'image' || childKey === 'images') {
         media.append(field);

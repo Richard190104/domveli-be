@@ -50,47 +50,6 @@
         "image": "images/vianocne-retaze-a-girlandy.webp"
       }
     ],
-    "categorySection": {
-      "kicker": "OBJAVTE DOMVELI",
-      "title": "Vianočné kúzlo začína tu",
-      "description": "Vyberte si osvetlenie a dekorácie, ktoré premenia každý priestor na miesto plné sviatočnej atmosféry.",
-      "linkText": "OBJAVIŤ KOLEKCIU →"
-    },
-    "inspirationBlog": {
-      "kicker": "DOMVELI MAGAZÍN",
-      "title": "Inšpirácia pre čarovné Vianoce",
-      "description": "Objavte tipy, nápady a návody, vďaka ktorým vytvoríte doma nezabudnuteľnú sviatočnú atmosféru.",
-      "button": "Všetky inšpirácie →",
-      "url": "/blog/",
-      "articles": [
-        {
-          "title": "Ako vybrať správne vianočné osvetlenie?",
-          "description": "Teplá alebo studená biela? Poradíme vám, ako vybrať svetlá pre váš domov.",
-          "image": "images/blog-osvetlenie.webp",
-          "url": "/blog/ako-vybrat-spravne-vianocne-osvetlenie--kompletny-sprievodca-pre-vas-domov/"
-        },
-        {
-          "title": "5 nápadov na čarovnú výzdobu okien",
-          "description": "Objavte, ako pomocou svetelných závesov vytvoriť útulnú sviatočnú atmosféru.",
-          "image": "images/blog-okna.webp",
-          "url": "/blog/5-napadov-na-carovnu-vianocnu-vyzdobu-okien/"
-        },
-        {
-          "title": "Elegantné Vianoce v zlatých tónoch",
-          "description": "Inšpirujte sa kombináciou jemných svetiel, zlatých dekorácií a prírodných materiálov.",
-          "image": "images/blog-dekoracie.webp",
-          "url": "/blog/elegantne-vianoce-v-zlatych-tonoch--vytvorte-si-domov-plny-sviatocneho-cara/"
-        }
-      ]
-    },
-    "feature": {
-      "kicker": "SPOZNAJTE DOMVELI",
-      "title": "Vianočná atmosféra začína u nás",
-      "description": "Veríme, že najkrajšie Vianoce tvoria chvíle strávené s blízkymi. Preto v DOMVELI prinášame svetelné dekorácie a doplnky, ktoré premieňajú každý domov na miesto plné tepla, pohody a nezabudnuteľných okamihov.",
-      "image": "images/o-nas.webp",
-      "button": "VIAC O NÁS →",
-      "url": "/domveli/o-nas/"
-    },
     "banners": [
       {
         "id": "dekoracie",
@@ -144,15 +103,7 @@
         "link": "/svetielka-na-stromcek/"
       }
     ],
-    "story": {
-      "kicker": "DOMVELI",
-      "title": "Malé detaily. Veľké čaro Vianoc.",
-      "description": "Veríme, že výnimočnú atmosféru tvoria detaily. Jemné svetlo v okne, rozžiarený stromček či dekorácia, ktorá poteší pri každom pohľade. Objavte svoj vlastný spôsob, ako si skrášliť Vianoce."
-    },
     "sets": {
-      "title": "Výhodné sety",
-      "subtitle": "Viac svetla. Výhodnejšia cena.",
-      "url": "/vyhodne-sety/",
       "products": [
         {
           "name": "Vianočný stôl – výhodný set pre 4 osoby s nálevkami na stolíčky a ...",
@@ -237,9 +188,6 @@
       ]
     },
     "favorites": {
-      "title": "Obľúbené produkty",
-      "subtitle": "Cencúle, svetielka a dekorácie, ktoré zákazníci vyberajú najčastejšie.",
-      "url": "/vonkajsie-led-svetielka/",
       "products": [
         {
           "name": "Vianočné LED cencúle 500 LED – 20 m, studená biela + FLASH, časovač",
@@ -308,9 +256,6 @@
       ]
     },
     "deals": {
-      "title": "Výhodná ponuka",
-      "subtitle": "Vianočné doplnky a svetielka do 13 €.",
-      "url": "/dekoracie-do-domacnosti/",
       "products": [
         {
           "name": "Vianočné gule na stromček 30 ks – ružové, nerozbitné",
@@ -363,35 +308,15 @@
       ]
     },
     "featuredProduct": {
-      "kicker": "NAJOBĽÚBENEJŠÍ PRODUKT",
       "badge": "TOP VÝBER",
       "title": "Vianočné LED cencúle 500 LED – 20 m, teplá + studená biela",
-      "description": "Teplá aj studená biela v jednom svetelnom závese, 500 LED na dĺžke 20 m. Ideálne na fasádu, terasu či okno.",
       "image": "/user/shop/big/57-3_led-cencule-500-tepla-studena-flash-1200x800.png",
       "url": "/vianocne-led-cencule-500-led-20-m-tepla-studena-biela/",
       "price": "54,90 €",
-      "oldPrice": "",
-      "button": "Pozrieť produkt →"
+      "oldPrice": ""
     },
-    "seo": {
-      "kicker": "DOMVELI",
-      "title": "Vianočné LED osvetlenie a dekorácie pre váš domov",
-      "subtitle": "Vytvorte si čarovnú vianočnú atmosféru s exkluzívnym osvetlením a dekoráciami",
-      "text": "Hľadáte spôsob, ako premeniť svoj domov na oázu sviatočnej pohody? V e-shope Domveli prinášame starostlivo vyberané vianočné osvetlenie a dekorácie, ktoré dodajú vášmu interiéru aj exteriéru hrejivý šmrnc. Či už plánujete kompletnú výzdobu, alebo zháňate spoľahlivé vonkajšie vianočné osvetlenie domu, u nás nakúpite rýchlo, bezpečne a s istotou.",
-      "items": [
-        {
-          "title": "Výhodné vianočné sety dekorácií",
-          "text": "Ušetrite čas aj peniaze. Naše tematické vianočné sety na balkón aj stôl k sebe farebne a štýlovo dokonale pasujú."
-        },
-        {
-          "title": "Bezpečné vonkajšie LED svetielka",
-          "text": "Certifikované vianočné LED cencúle a reťaze s vysokou odolnosťou voči mrazu a dažďu pre váš dom či terasu."
-        },
-        {
-          "title": "Odborné poradenstvo a tipy",
-          "text": "Neviete, koľko svetielok potrebujete na stromček? Prečítajte si náš praktický sprievodca výberom."
-        }
-      ]
+    "footer": {
+      "description": "Veríme, že výnimočnú atmosféru tvoria detaily. Jemné svetlo v okne, rozžiarený stromček či dekorácia, ktorá poteší pri každom pohľade. Objavte svoj vlastný spôsob, ako si skrášliť Vianoce."
     }
   },
   "notificationsConfig": [

@@ -22,9 +22,8 @@ const MAX_IMAGES = 30;
 
 function validateConfig(value: any) {
   const home = value?.DOMVELI_CONFIG;
-  if (!home || !Array.isArray(home.categories) || !Array.isArray(home.banners) || !home.categorySection ||
-      !home.story || !home.inspirationBlog || !Array.isArray(value.notificationsConfig) ||
-      !Array.isArray(value.navbannerConfig)) {
+  if (!home || !Array.isArray(home.categories) || !Array.isArray(home.banners) ||
+      !Array.isArray(value.notificationsConfig) || !Array.isArray(value.navbannerConfig)) {
     throw new HttpError(400, 'Neplatná štruktúra configu.');
   }
 }
@@ -97,13 +96,6 @@ async function publish(payload: any) {
   if (oldTree.truncated) throw new HttpError(502, 'Repozitár je príliš veľký na bezpečné publikovanie.');
   const existing = new Set<string>(oldTree.tree.filter((e: any) => e.type === 'blob').map((e: any) => e.path));
 
-  let oldConfig: unknown = {};
-  const oldConfigEntry = oldTree.tree.find((e: any) => e.path === 'config.json');
-  if (oldConfigEntry) {
-    const blob = await github(`git/blobs/${oldConfigEntry.sha}`);
-    oldConfig = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(blob.content.replace(/\s/g, '')), (c) => c.charCodeAt(0))));
-  }
-
   const tree: any[] = [{ path: 'config.json', mode: '100644', type: 'blob', content: json }];
   for (const name of used) {
     if (images[name]) {
@@ -113,10 +105,7 @@ async function publish(payload: any) {
       throw new HttpError(400, `Chýba obrázok images/${name}.`);
     }
   }
-  // Obrázky, ktoré config už nepoužíva, sa zmažú.
-  for (const name of referencedImages(oldConfig)) {
-    if (!used.has(name) && existing.has(`images/${name}`)) tree.push({ path: `images/${name}`, mode: '100644', type: 'blob', sha: null });
-  }
+  // Nepoužívané obrázky sa nemažú: niektoré (hero banner, O značke) sú priamo v HTML v Shoptete.
 
   const nextTree = await github('git/trees', 'POST', { base_tree: commit.tree.sha, tree });
   const nextCommit = await github('git/commits', 'POST', {
