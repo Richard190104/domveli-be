@@ -75,17 +75,29 @@
       {
         "id": "zavesy",
         "images": [
-          "images/banner2.webp"
+          "images/banner2.webp",
+          "images/svetelne-zavesy.webp"
         ],
-        "uptitle": "SVETELNÉ ZÁVESY",
+        "uptitle": [
+          "SVETELNÉ ZÁVESY",
+          "CENCÚLE NA MIERU"
+        ],
         "title": [
-          "Rozžiarte svoj exteriér"
+          "Rozžiarte svoj exteriér",
+          "Akú dlhú máte strechu?"
         ],
         "description": [
-          "Vytvorte príjemné privítanie počas celých Vianoc."
+          "Vytvorte príjemné privítanie počas celých Vianoc.",
+          "Zadajte dĺžku a vyskladáme vám cencúle z prepojiteľných sád."
         ],
-        "button": "OBJAVIŤ ZÁVESY →",
-        "link": "/svetelne-zavesy/"
+        "button": [
+          "OBJAVIŤ ZÁVESY →",
+          "VYPOČÍTAŤ ZOSTAVU →"
+        ],
+        "links": [
+          "/svetelne-zavesy/",
+          "#cencule-na-mieru"
+        ]
       },
       {
         "id": "retaze",
