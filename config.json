@@ -195,26 +195,42 @@
     "favorites": {
       "products": [
         {
-          "name": "Vianočné LED cencúle 500 LED – 20 m, studená biela + FLASH, časovač",
-          "image": "images/vianocne-led-cencule-500-led-20-m-studena-biela-s-flash-efek-1794522060064-gekcpo.webp",
-          "url": "/vianocne-led-cencule-500-led-20-m-studena-biela-casovac/",
-          "price": "47,90 €",
-          "oldPrice": "",
-          "discount": ""
-        },
-        {
           "name": "Vianočné LED cencúle 500 LED – 21,5 m, teplá biela + FLASH, časovač",
           "image": "images/vianocne-led-cencule-500-led-21-5-m-tepla-biela-s-flash-efek-1794522069239-wiepps.webp",
           "url": "/vianocne-led-cencule-500-led-21-5-m-tepla-biela-flash/",
-          "price": "47,90 €",
+          "price": "52,90 €",
           "oldPrice": "",
           "discount": ""
         },
         {
-          "name": "Vianočný LED sob 100 LED – 69 cm, teplá biela, časovač",
-          "image": "/user/shop/big/297_vianocny-svietiaci-sob-s-led-dekoraciou.png",
-          "url": "/vianocny-led-sob-100-led-69-cm-tepla-biela-ip44/",
-          "price": "59,90 €",
+          "name": "Vianočné LED svetielka FLASH 500 LED – 40 m, teplá biela + studený FLASH",
+          "image": "/user/shop/big/525-1_vianocne-led-osvetlenie-s-efektom-flash.png",
+          "url": "/vianocne-led-svetielka-flash-500-led-40-m-tepla-biela/",
+          "price": "29,90 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Bordová vianočná girlanda z gulí 160 cm – 130 ozdôb",
+          "image": "/user/shop/big/572_bordova-vianocna-girlanda-zo-130-ozdobnych-guli-160-cm---springos-ca0989.png",
+          "url": "/bordova-vianocna-girlanda-z-guli-160-cm/",
+          "price": "35,99 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Zlatá vianočná girlanda z gulí 160 cm – 130 ozdôb",
+          "image": "/user/shop/big/575_zlata-vianocna-girlanda-zo-130-ozdobnych-guli--dlzka-160-cm---springos-ca0982.jpg",
+          "url": "/zlata-vianocna-girlanda-z-guli-160-cm/",
+          "price": "35,99 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočné gule na stromček 30 ks – zlaté, 4/5/6 cm, nerozbitné",
+          "image": "/user/shop/big/288-1_vianocna-kolekcia-zlatych-ozdob.png",
+          "url": "/vianocne-gule-na-stromcek-30-ks-zlate-4-5-6-cm/",
+          "price": "8,90 €",
           "oldPrice": "",
           "discount": ""
         },
@@ -223,38 +239,6 @@
           "image": "/user/shop/big/303_teple-led-zavesne-svetla-pri-okne.png",
           "url": "/led-svetelny-zaves-300-led-3x3-m-tepla-biela/",
           "price": "19,90 €",
-          "oldPrice": "",
-          "discount": ""
-        },
-        {
-          "name": "Vianočné LED svetielka 1000 LED – 50 m, teplá biela, IP44",
-          "image": "/user/shop/big/522_zimna-rozpravka-s-1000-led-svetlami.png",
-          "url": "/vianocne-led-svetielka-1000-led-50-m-tepla-biela/",
-          "price": "49,90 €",
-          "oldPrice": "",
-          "discount": ""
-        },
-        {
-          "name": "LED svetelná hadica 480 LED – 20 m, teplá biela, IP44",
-          "image": "/user/shop/big/246_obrazok-chatgpt-28--9--2026--12-50-09.png",
-          "url": "/led-svetelna-hadica-480-led-20-m-tepla-biela/",
-          "price": "29,90 €",
-          "oldPrice": "",
-          "discount": ""
-        },
-        {
-          "name": "Vianočný veniec z gulí – bielo-strieborný, 34 cm",
-          "image": "/user/shop/big/426-1_luxusny-vianocny-veniec-zo-55-gul.png",
-          "url": "/vianocny-veniec-z-guli-bielo-strieborny-34-cm/",
-          "price": "24,90 €",
-          "oldPrice": "",
-          "discount": ""
-        },
-        {
-          "name": "Vianočné gule na stromček 30 ks – červeno-biele, nerozbitné",
-          "image": "/user/shop/big/363_vianocna-suprava-ozdob-s-30-kusmi--1.png",
-          "url": "/vianocne-gule-30-ks-cerveno-biele-5-5-cm/",
-          "price": "16,90 €",
           "oldPrice": "",
           "discount": ""
         }
@@ -314,10 +298,10 @@
     },
     "featuredProduct": {
       "badge": "TOP VÝBER",
-      "title": "Vianočné LED cencúle 500 LED – 20 m, teplá + studená biela",
-      "image": "images/vianocne-led-cencule-500-led-20-m-tepla-a-studena-biela-vian-1794521978317-ij7e2e.webp",
-      "url": "/vianocne-led-cencule-500-led-20-m-tepla-studena-biela/",
-      "price": "54,90 €",
+      "title": "Vianočné LED cencúle 500 LED – 20 m, teplá biela, 8 režimov",
+      "image": "/user/shop/big/581-64_vianocne-led-cencule-springos-cl0501---500-led--20-m--tepla-biela--vonkajsie-vianocne-osvetlenie-ip44.png",
+      "url": "/vianocne-led-cencule-20m-500-led-tepla-biela/",
+      "price": "52,90 €",
       "oldPrice": ""
     },
     "footer": {
