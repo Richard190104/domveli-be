@@ -116,13 +116,13 @@
     "sets": {
       "products": [
         {
-          "name": "Vianočný stôl – výhodný set pre 4 osoby s návlekmi na stoličky a dekoráciami",
-          "image": "images/set-vianocny-stol.webp",
-          "url": "/vianocny-stol-vyhodny-set/",
-          "price": "20,90 €",
-          "oldPrice": "23,75 €",
+          "name": "Zlaté Vianoce – kompletný set LED osvetlenia domu",
+          "image": "images/set-zlate-vianoce.webp",
+          "url": "/vianocny-set-zlate-vianoce-osvetlenie-domu/",
+          "price": "129,90 €",
+          "oldPrice": "140,70 €",
           "discount": "",
-          "includes": "4 návleky na stoličky, 4 vrecúška na príbor, obal na fľašu"
+          "includes": "Cencúle 21,5 m, svetelná hadica 20 m, LED sob · teplá biela"
         },
         {
           "name": "Ľadový balkón – vianočný set 600 LED, studená biela, 3 produkty",
@@ -134,13 +134,13 @@
           "includes": "Cencúle 8 m, svetelný záves 3 × 3 m, reťaz 10 m · studená biela"
         },
         {
-          "name": "Zlaté Vianoce – kompletný set LED osvetlenia domu",
-          "image": "images/set-zlate-vianoce.webp",
-          "url": "/vianocny-set-zlate-vianoce-osvetlenie-domu/",
-          "price": "129,90 €",
-          "oldPrice": "140,70 €",
+          "name": "Vianočný stôl – výhodný set pre 4 osoby s návlekmi na stoličky a dekoráciami",
+          "image": "images/set-vianocny-stol.webp",
+          "url": "/vianocny-stol-vyhodny-set/",
+          "price": "20,90 €",
+          "oldPrice": "23,75 €",
           "discount": "",
-          "includes": "Cencúle 21,5 m, svetelná hadica 20 m, LED sob · teplá biela"
+          "includes": "4 návleky na stoličky, 4 vrecúška na príbor, obal na fľašu"
         },
         {
           "name": "Zimná rozprávka – vianočný set 30 bielych gulí, 12 vločiek a 6 m reťaze",
