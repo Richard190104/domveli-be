@@ -116,84 +116,94 @@
     "sets": {
       "products": [
         {
-          "name": "Vianočný stôl – výhodný set pre 4 osoby s nálevkami na stolíčky a ...",
+          "name": "Vianočný stôl – výhodný set pre 4 osoby s návlekmi na stoličky a dekoráciami",
           "image": "images/set-vianocny-stol.webp",
           "url": "/vianocny-stol-vyhodny-set/",
           "price": "20,90 €",
-          "oldPrice": "",
-          "discount": ""
+          "oldPrice": "23,75 €",
+          "discount": "",
+          "includes": "4 návleky na stoličky, 4 vrecúška na príbor, obal na fľašu"
         },
         {
-          "name": "Ľadový balkón – vianočný LED set 600 LED, studená biela, 3 produkty",
+          "name": "Ľadový balkón – vianočný set 600 LED, studená biela, 3 produkty",
           "image": "images/set-ladovy-balkon.webp",
           "url": "/ladovy-balkon-vianocny-led-set-600-led/",
-          "price": "51,90 €",
-          "oldPrice": "",
-          "discount": ""
+          "price": "53,90 €",
+          "oldPrice": "59,70 €",
+          "discount": "",
+          "includes": "Cencúle 8 m, svetelný záves 3 × 3 m, reťaz 10 m · studená biela"
         },
         {
           "name": "Zlaté Vianoce – kompletný set LED osvetlenia domu",
           "image": "images/set-zlate-vianoce.webp",
           "url": "/vianocny-set-zlate-vianoce-osvetlenie-domu/",
           "price": "129,90 €",
-          "oldPrice": "",
-          "discount": ""
+          "oldPrice": "140,70 €",
+          "discount": "",
+          "includes": "Cencúle 21,5 m, svetelná hadica 20 m, LED sob · teplá biela"
         },
         {
-          "name": "Zimná rozprávka – vianočný set 30 bielych guli, 12 včelích guli a 6 metrov ...",
+          "name": "Zimná rozprávka – vianočný set 30 bielych gulí, 12 vločiek a 6 m reťaze",
           "image": "images/set-zimna-rozpravka.webp",
           "url": "/zimna-rozpravka-vianocny-set/",
-          "price": "42,90 €",
-          "oldPrice": "",
-          "discount": ""
+          "price": "43,90 €",
+          "oldPrice": "47,70 €",
+          "discount": "",
+          "includes": "30 bielych gulí, 12 snehových vločiek, reťaz 6 m"
         },
         {
           "name": "Zlatý stromček – vianočný set 500 LED + 46 zlatých ozdôb",
           "image": "images/set-zlaty-stromcek.webp",
           "url": "/zlaty-stromcek-500-led-46-ozdob-/",
-          "price": "53,90 €",
-          "oldPrice": "",
-          "discount": ""
+          "price": "54,90 €",
+          "oldPrice": "58,70 €",
+          "discount": "",
+          "includes": "Reťaz 500 LED 40 m, 46 zlatých a zlatobielych gulí"
         },
         {
-          "name": "Vianočná pohoda – set 4 obliečok na vankúše, 4 obliečky na vankúše a 1 x ...",
+          "name": "Vianočná pohoda – set 4 obliečok na vankúše, škriatka a LED svetielok",
           "image": "images/set-vianocna-pohoda.webp",
           "url": "/vianocna-pohoda-vyhodny-set/",
-          "price": "29,90 €",
-          "oldPrice": "",
-          "discount": ""
+          "price": "32,90 €",
+          "oldPrice": "35,79 €",
+          "discount": "",
+          "includes": "4 obliečky na vankúše, škriatok 42 cm, LED svetielka 10 m"
         },
         {
-          "name": "Kúzelný balkón – vianočný LED set 600 LED, teplá biela, 3 produkty",
+          "name": "Kúzelný balkón – vianočný set 600 LED, teplá biela, 3 produkty",
           "image": "images/set-kuzelny-balkon.webp",
           "url": "/kuzelny-balkon-vianocny-led-set-600-led/",
-          "price": "51,90 €",
-          "oldPrice": "",
-          "discount": ""
+          "price": "53,90 €",
+          "oldPrice": "59,70 €",
+          "discount": "",
+          "includes": "Cencúle 8 m, svetelný záves 3 × 3 m, reťaz 10 m · teplá biela"
         },
         {
-          "name": "Červená elegancia – vianočný set 40 ozdôb, 6 červených magnólií a 6 m ...",
+          "name": "Červená elegancia – vianočný set 40 ozdôb, 6 červených magnólií a 6 m reťaze",
           "image": "images/set-cervena-elegancia.webp",
           "url": "/cervena-elegancia-vianocny-set/",
-          "price": "45,90 €",
-          "oldPrice": "",
-          "discount": ""
+          "price": "43,90 €",
+          "oldPrice": "47,20 €",
+          "discount": "",
+          "includes": "40 ozdôb, 6 červených magnólií, reťaz 6 m"
         },
         {
-          "name": "Ľadové Vianoce – kompletné LED osvetlenie domu",
+          "name": "Ľadové Vianoce – kompletný set LED osvetlenia domu",
           "image": "images/set-ladove-vianoce.webp",
           "url": "/vianocny-set-ladove-vianoce-osvetlenie-domu/",
-          "price": "99,90 €",
-          "oldPrice": "",
-          "discount": ""
+          "price": "104,90 €",
+          "oldPrice": "112,70 €",
+          "discount": "",
+          "includes": "Cencúle 20 m, svetelná hadica 20 m, reťaz 40 m · studená biela"
         },
         {
-          "name": "Farebné Vianoce – kompletné LED osvetlenie domu, 1480 LED",
+          "name": "Farebné Vianoce – kompletný set LED osvetlenia domu",
           "image": "images/set-farebne-vianoce.webp",
           "url": "/farebne-vianoce---kompletny-set-led-osvetlenia-domu--1480-led/",
           "price": "105,90 €",
-          "oldPrice": "",
-          "discount": ""
+          "oldPrice": "112,70 €",
+          "discount": "",
+          "includes": "Cencúle 20 m, svetelná hadica 20 m, reťaz 40 m · viacfarebné"
         }
       ]
     },
