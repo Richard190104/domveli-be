@@ -70,7 +70,12 @@
         "links": [
           "/vianocna-vyzdoba-vonku/",
           "/vianocna-vyzdoba-doma/"
-        ]
+        ],
+        "extra": {
+          "text": "Cencúle na mieru",
+          "link": "#cencule-na-mieru",
+          "title": "Vypočítame vám zostavu cencúľov na mieru"
+        }
       },
       {
         "id": "zavesy",
