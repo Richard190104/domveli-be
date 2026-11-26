@@ -262,50 +262,66 @@
     "deals": {
       "products": [
         {
-          "name": "Vianočné gule na stromček 30 ks – ružové, nerozbitné",
-          "image": "/user/shop/big/360-2_a9eea526-1255-4279-b524-18f04b376e5c.png",
-          "url": "/vianocne-gule-30-ks-ruzove-4-5-6-cm/",
-          "price": "6,90 €",
-          "oldPrice": "",
-          "discount": ""
-        },
-        {
-          "name": "Zlaté vianočné guľôčky na drôtikoch, 6 zväzkov",
-          "image": "/user/shop/big/357_zlate-vianocne-gulocky---6-zvazkov.png",
-          "url": "/zlate-vianocne-gulocky-na-drotikoch-6-zvazkov/",
-          "price": "9,90 €",
-          "oldPrice": "",
-          "discount": ""
-        },
-        {
-          "name": "Vianočný škriatok 37 cm – sivý s bielou bradou",
-          "image": "/user/shop/big/417_9019-ca0072-skrzat-gnom-37-cm-m1.jpg",
-          "url": "/vianocny-skriatok-37-cm-sivy/",
+          "name": "Vianočná dekorácia – červené bobule jarabiny na drôtiku, 100 ks",
+          "image": "/user/shop/big/411_cervene-trblietave-bobule-na-drotikoch.png",
+          "url": "/vianocna-dekoracia-bobule-jarabiny-cervene-100-ks/",
           "price": "7,90 €",
           "oldPrice": "",
           "discount": ""
         },
         {
-          "name": "Vianočné obliečky na vankúše 40 × 40 cm, soby, 4 ks",
-          "image": "/user/shop/big/456-2_194728-ca1459-zestaw-poszewek-swiatecznych-4-szt-m1.jpg",
-          "url": "/vianocne-obliecky-na-vankuse-springos-40x40-cm-4-ks/",
-          "price": "9,99 €",
-          "oldPrice": "",
-          "discount": ""
-        },
-        {
-          "name": "Zlatá vianočná reťaz na stromček 6 m – lesklá",
-          "image": "/user/shop/big/477_22570-ca0933-lancuch-choinkowy-6-m-m1.jpg",
-          "url": "/zlata-vianocna-retaz-na-stromcek-6m/",
-          "price": "12,90 €",
-          "oldPrice": "",
-          "discount": ""
-        },
-        {
-          "name": "Vonkajšia LED reťaz na batérie 100 LED – 10 m, studená biela",
+          "name": "Vonkajšia LED svetelná reťaz na batérie 100 LED – 10 m, studená biela, 8 režimov, IP44",
           "image": "/user/shop/big/267_zasnezeny-ker-so-studenymi-led-svetlami.png",
           "url": "/vonkajsia-led-retaz-na-baterie-100-led-10-m-studena-biela/",
           "price": "12,90 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočné ozdoby na stromček – snehové vločky 10 cm, biele, trblietavé, 12 ks",
+          "image": "/user/shop/big/348_trblietave-snehove-vlocky---12-ks.png",
+          "url": "/vianocne-snehove-vlocky-na-stromcek-10-cm-12-ks/",
+          "price": "6,90 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Zelené háčiky na vianočné ozdoby – 150 ks",
+          "image": "/user/shop/big/423-1_vianocne-zelene-haciky-v-baleni.png",
+          "url": "/zelene-haciky-na-vianocne-ozdoby-150-ks/",
+          "price": "7,90 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočné obaly na príbor – červené stromčeky, 2 ks",
+          "image": "/user/shop/big/402_7633-ca0600-pokrowiec-na-sztucce-18x20-cm-2-szt-m1.jpg",
+          "url": "/vianocne-obaly-na-pribor-cervene-stromceky-2-ks/",
+          "price": "3,90 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočné gule na stromček 30 ks – zlaté, 4/5/6 cm, nerozbitné",
+          "image": "/user/shop/big/288-1_vianocna-kolekcia-zlatych-ozdob.png",
+          "url": "/vianocne-gule-na-stromcek-30-ks-zlate-4-5-6-cm/",
+          "price": "8,90 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočný obal na fľašu – červený škriatok, 29 cm",
+          "image": "/user/shop/big/447_7721-ca0613-pokrowiec-na-butelke-32x14-cm-m1.jpg",
+          "url": "/vianocny-obal-na-flasu-cerveny-skriatok/",
+          "price": "5,99 €",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočné obliečky na vankúše 40 × 40 cm – soby a vianočné motívy, 4 ks",
+          "image": "/user/shop/big/456-2_vianocne-obliecky-na-vankuse-40--40-cm---soby-a-vianocne-motivy--4-ks.jpg",
+          "url": "/vianocne-obliecky-na-vankuse-springos-40x40-cm-4-ks/",
+          "price": "9,99 €",
           "oldPrice": "",
           "discount": ""
         }
