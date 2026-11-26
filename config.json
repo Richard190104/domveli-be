@@ -324,6 +324,214 @@
           "price": "9,99 €",
           "oldPrice": "",
           "discount": ""
+        },
+        {
+          "name": "LED svetelná reťaz na batérie 100 LED – 10 m, viacfarebná, IP44",
+          "url": "/led-svetelna-retaz-na-baterie-100-led-10-m-viacfarebna/",
+          "price": "5,90 €",
+          "image": "/user/shop/big/258-1_viacfarebne-led-svetla-v-zimnej-scenerii.png",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vonkajšia LED svetelná reťaz na batérie 100 LED – 10 m, viacfarebná, 8 režimov, ovládač, IP44",
+          "url": "/vonkajsia-led-retaz-na-baterie-100-led-10-m-viacfarebna/",
+          "price": "12,90 €",
+          "image": "/user/shop/big/264_vonkajsia-led-svetelna-retaz-na-baterie-100-led---10-m--viacfarebna--8-rezimov--ovladac--ip44.png",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočné gule na stromček 30 ks – strieborné, 4/5/6 cm, nerozbitné",
+          "url": "/vianocne-gule-30-ks-strieborne-4-5-6-cm/",
+          "price": "8,90 €",
+          "image": "/user/shop/big/291-1_vianocna-suprava-striebornych-ozdob-30-ks.png",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočné ozdoby na stromček 40 ks – červené a zlaté, mix tvarov, nerozbitné",
+          "url": "/vianocne-ozdoby-na-stromcek-40-ks-cervene/",
+          "price": "10,90 €",
+          "image": "/user/shop/big/312_vianocna-kolekcia-ozdob-40-kusov.png",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočná hviezda na stromček 15 cm – zlatá, nerozbitná",
+          "url": "/vianocna-hviezda-na-stromcek-15-cm-zlata/",
+          "price": "3,90 €",
+          "image": "/user/shop/big/336_vianocna-hviezda-na-stromcek-15-cm---zlata--nerozbitna.png",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočná magnólia na stromček 24 cm – červená, trblietavá",
+          "url": "/vianocna-magnolia-na-stromcek-24-cm-cervena/",
+          "price": "3,90 €",
+          "image": "/user/shop/big/342_vianocna-cervena-poinsettia-s-detailmi.png",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Čierne háčiky na vianočné ozdoby, 60 ks",
+          "url": "/cierne-haciky-na-vianocne-ozdoby-60-ks/",
+          "price": "4,90 €",
+          "image": "/user/shop/big/345_vianocne-cierne-s-haciky---60-kusov.png",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočná ozdoba vianočná ruža/Poinsettia 11x11 cm",
+          "url": "/vianocna-kvetina-na-stromcek-10x10-cm-biela/",
+          "price": "2,49 €",
+          "image": "/user/shop/big/354_trblietavy-biely-vianocny-kvet.png",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Zlaté vianočné guľôčky na drôtikoch 6 zväzkov po 9 guľôčok - nerozbitné",
+          "url": "/zlate-vianocne-gulocky-na-drotikoch-6-zvazkov/",
+          "price": "9,90 €",
+          "image": "/user/shop/big/357_zlate-vianocne-gulocky---6-zvazkov.png",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočné gule na stromček 30 ks – ružové, 4/5/6 cm, nerozbitné",
+          "url": "/vianocne-gule-30-ks-ruzove-4-5-6-cm/",
+          "price": "6,90 €",
+          "image": "/user/shop/big/360-2_a9eea526-1255-4279-b524-18f04b376e5c.png",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Perlová vianočná girlanda na stromček – krémová, 10 m, 8 mm",
+          "url": "/vianocna-perlova-retaz-8-mm-10-m-kremova/",
+          "price": "8,90 €",
+          "image": "/user/shop/big/414_perlova-vianocna-girlanda-na-stromcek---kremova--10-m--8-mm.jpg",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočný škriatok 37 cm – sivý s bielou bradou",
+          "url": "/vianocny-skriatok-37-cm-sivy/",
+          "price": "7,90 €",
+          "image": "/user/shop/big/417_9019-ca0072-skrzat-gnom-37-cm-m1.jpg",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Červené vianočné guľôčky na drôtikoch 6 zväzkov po 9 guľôčok - nerozbitné",
+          "url": "/vianocne-dekoracne-gulocky-cervene-6-zvazvok/",
+          "price": "9,90 €",
+          "image": "/user/shop/big/432_vianocne-cervene-ozdobne-gulicky-v-zvazkoch.png",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočná ruža na stromček s klipom – červeno-zlatá, 13 cm",
+          "url": "/vianocna-ruza-cerveno-zlata-s-klipom-13-cm/",
+          "price": "2,49 €",
+          "image": "/user/shop/big/435_vianocna-cerveno-zlata-poinsettia-s-klipom.png",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočná ruža na stromček 13 cm – červená so zlatými trblietkami",
+          "url": "/vianocna-ruza-cervena-zlate-trblietky-13-cm/",
+          "price": "2,49 €",
+          "image": "/user/shop/big/438_vianocna-trblietava-poinsettia-s-detailmi.png",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočná ruža na stromček s klipom – krémovo-zlatá, 13 cm",
+          "url": "/vianocna-ruza-kremovo-zlata-s-klipom-13-cm/",
+          "price": "2,49 €",
+          "image": "/user/shop/big/441_trblietava-zlata-poinsettia-na-vianocny-stromcek.png",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočné obliečky na vankúše 40 × 40 cm – červeno-čierne, 4 ks",
+          "url": "/vianocne-obliecky-na-vankuse-40x40-4ks/",
+          "price": "9,99 €",
+          "image": "/user/shop/big/444-1_vianocne-obliecky-na-vankuse-40--40-cm---cerveno-cierne--4-ks.jpg",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočný návlek na stoličku – Mikulášska čiapka, 60 × 50 cm",
+          "url": "/vianocny-potah-na-stolicku-ciapka-santa-claus/",
+          "price": "2,49 €",
+          "image": "/user/shop/big/450_7806-ha0200-pokrowiec-na-krzeslo-m1.jpg",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočné obaly na príbor – siví škriatkovia, 2 ks",
+          "url": "/vianocne-obaly-na-pribor-sivi-skriatkovia-2ks/",
+          "price": "3,99 €",
+          "image": "/user/shop/big/453_7648-ca0603-pokrowiec-na-sztucce-2-szt-m1.jpg",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočný návlek na stoličku – sivá mikulášska čiapka, 63 × 48 cm",
+          "url": "/vianocny-navlek-na-stolicku-siva-ciapka/",
+          "price": "2,49 €",
+          "image": "/user/shop/big/459_7824-ha0201-pokrowiec-na-krzeslo-m1.jpg",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vianočná reťaz na stromček 6 m – červeno-zlatá",
+          "url": "/vianocna-retaz-6m-cerveno-zlata/",
+          "price": "12,90 €",
+          "image": "/user/shop/big/462_vianocna-retaz-na-stromcek-6-m---cerveno-zlata.jpg",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Modrá vianočná reťaz na stromček 6 m – lesklá",
+          "url": "/modra-vianocna-retaz-na-stromcek-6m/",
+          "price": "12,90 €",
+          "image": "/user/shop/big/474_modra-vianocna-retaz-na-stromcek-6-m---leskla.jpg",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Zlatá vianočná reťaz na stromček 6 m – lesklá",
+          "url": "/zlata-vianocna-retaz-na-stromcek-6m/",
+          "price": "12,90 €",
+          "image": "/user/shop/big/477_zlata-vianocna-retaz-na-stromcek-6-m---leskla.jpg",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "Vonkajšia LED svetelná reťaz na batérie 100 LED – 10 m, teplá biela, 8 režimov, ovládač, IP44",
+          "url": "/vianocna-led-svetelna-retaz-10-m-100-led-tepla-biela/",
+          "price": "12,90 €",
+          "image": "/user/shop/big/516_zimna-reklama-na-teple-led-osvetlenie.png",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "LED svetelná reťaz na batérie 100 LED – 10 m, teplá biela, strieborný drôt",
+          "url": "/led-svetelna-retaz-na-baterie-100-led-10-m-tepla-biela/",
+          "price": "5,90 €",
+          "image": "/user/shop/big/531_dekoracne-led-svetla-s-teplym-leskom.png",
+          "oldPrice": "",
+          "discount": ""
+        },
+        {
+          "name": "LED svetelná reťaz na batérie 100 LED – 10 m, studená biela, IP44",
+          "url": "/led-svetelna-retaz-na-baterie-100-led-10-m-studena-biela/",
+          "price": "5,90 €",
+          "image": "/user/shop/big/534_zimne-led-svetla-s-dekoraciami.png",
+          "oldPrice": "",
+          "discount": ""
         }
       ]
     },
